@@ -1,6 +1,12 @@
 # Githubtest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+It uses Nebular 4 for the UX elements and Bootstrap 4.5 for reponsive grid layout.
+
+## Initial setup
+
+1. Clone the repo.
+2. Use `npm install` in the terminal to install all dependencies.
 
 ## Development server
 
