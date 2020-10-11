@@ -1,14 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { GitHubService } from '../services/git-hub.service';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
 // Import interfaces
 import { IUsersList, IGithubUser } from '../interfaces/github-users';
 
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
-  styleUrls: ['./user-details.component.scss']
+  styleUrls: ['./user-details.component.scss'],
+  animations: [
+    trigger('EnterLeave', [
+      state('flyIn', style({ transform: 'translateX(0)' })),
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('0.5s 300ms ease-in')
+      ]),
+      transition(':leave', [
+        animate('0.3s ease-out', style({ transform: 'translateX(100%)' }))
+      ])
+    ])
+  ]
 })
 export class UserDetailsComponent implements OnInit {
 
