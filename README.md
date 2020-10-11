@@ -19,7 +19,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
   - Start typing a github username in the search box
   - Auto-suggestion will show the first 10 results with username and avatar image
-  - Click on one of the reults in the list
+  - Click on one of the results in the list
   - On the User Details page you will see the Name of the user with avatar picture, repos and followers.
 
 ## Code scaffolding
