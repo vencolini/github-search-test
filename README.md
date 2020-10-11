@@ -25,7 +25,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
   
 # 2. By using direct UTL
 - Use the following URL to see the details of known GitHub username
-`http://localhost:4200/user-details/{github_username}
+
+http://localhost:4200/user-details/{github_username}
 
 ## Code scaffolding
 
