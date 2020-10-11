@@ -1,10 +1,26 @@
 # Githubtest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+It uses: 
+- Node 12.18.1
+- Nebular 4 for the UX elements
+- Bootstrap 4.5 for responsive grid layout.
+
+## Initial setup
+
+1. Clone the repo.
+2. Use `npm install` in the terminal to install all dependencies.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+# How to use the app
+
+  - Start typing a github username in the search box
+  - Auto-suggestion will show the first 10 results with username and avatar image
+  - Click on one of the results in the list
+  - On the User Details page you will see the Name of the user with avatar picture, repos and followers.
 
 ## Code scaffolding
 
@@ -13,6 +29,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+```sh
+$ ng build
+```
 
 ## Running unit tests
 
