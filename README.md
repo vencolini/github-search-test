@@ -15,6 +15,13 @@ It uses:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+# How to use the app
+
+  - Start typing a github username in the search box
+  - Auto-suggestion will show the first 10 results with username and avatar image
+  - Click on one of the reults in the list
+  - On the User Details page you will see the Name of the user with avatar picture, repos and followers.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -22,6 +29,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+```sh
+$ ng build
+```
 
 ## Running unit tests
 
