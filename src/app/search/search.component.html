@@ -1,0 +1,20 @@
+
+
+
+<div class="container content"> <!-- container centers content on large screens -->
+    <div class="row">             <!-- responsive row has 12 columns by default -->
+
+        <div class="col-md-6">      <!-- uses 6 columns on medium and larger screens... -->
+            <nb-form-field>
+                <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+                <input #user_input id="user_input" type="text" nbInput placeholder="Search GitHub Username">
+            </nb-form-field>
+            
+            <app-search-results-list [users]="this.users"></app-search-results-list>
+        </div>
+      
+        <div class="col-md-6">      <!-- uses 12 columns on smaller than medium screens -->
+        Seccond column
+        </div>
+    </div>
+  </div>

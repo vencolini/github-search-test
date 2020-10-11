@@ -1,0 +1,41 @@
+<div class="container content"> 
+    <div class="row">             
+
+        <div class="col-md-4">
+            <div *ngIf="active_user">
+                <img center class="profile-image" [src]="active_user.avatar_url" alt="User picture">
+                <nb-card accent="info">
+                    <nb-card-header>{{ active_user.name }}</nb-card-header>
+                    <nb-card-body>
+                        Bio: {{ active_user.bio }}
+                    </nb-card-body>
+                    <nb-card-body>
+                        Username: {{ active_user.login }}
+                    </nb-card-body>
+                    <nb-card-body>
+                        Followers: {{ active_user.followers }}
+                    </nb-card-body>
+                </nb-card>
+            </div>
+        </div>
+      
+        <div class="col-md-4">      
+            <h4>Repositories</h4>
+            <nb-card accent="info" *ngFor="let repo of repos">
+                <nb-card-header>{{repo.name}}</nb-card-header>
+                <nb-card-body>
+                  {{ repo.description }}
+                </nb-card-body>
+            </nb-card>
+        </div>
+
+        <div class="col-md-4">   
+            <h4>Followers</h4>
+            <nb-user *ngFor="let follower of followers" 
+                size="medium"
+                [name]="follower.login"
+                [picture]="follower.avatar_url">
+            </nb-user>
+        </div>
+    </div>
+  </div>

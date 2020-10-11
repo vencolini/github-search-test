@@ -1,0 +1,12 @@
+<nb-card size="small">
+    <nb-list>
+      <nb-list-item *ngFor="let user of users" [routerLink]="['/user-details', user.login]">
+        <nb-user
+            size="giant"
+            [name]="user.login"
+            [title]="user.type"
+            [picture]="user.avatar_url">
+        </nb-user>
+      </nb-list-item>
+    </nb-list>
+</nb-card>

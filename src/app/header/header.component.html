@@ -1,0 +1,17 @@
+<nb-actions class="left">
+    <nb-action>
+        <h6 class="header-logo" routerLink="/">GitHub Search</h6>
+    </nb-action>
+    <nb-action>
+        <button nbButton (click)="changeThemeTo('default')">Default</button>
+        <nb-badge *ngIf="isActiveTheme('default')" text="active" status="success" position="top right"></nb-badge>
+    </nb-action>
+    <nb-action>
+        <button nbButton (click)="changeThemeTo('dark')">Dark</button>
+        <nb-badge *ngIf="isActiveTheme('dark')" text="active" status="success" position="top right"></nb-badge>
+    </nb-action>
+    <nb-action>
+        <button nbButton (click)="changeThemeTo('cosmic')">Cosmic</button>
+        <nb-badge *ngIf="isActiveTheme('cosmic')" text="active" status="success" position="top right"></nb-badge>
+    </nb-action>
+</nb-actions>

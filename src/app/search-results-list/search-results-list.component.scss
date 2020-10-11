@@ -1,0 +1,7 @@
+@import '../../themes';
+
+
+nb-list-item:hover {
+    background-color: nb-theme(background-primary-color-1);
+    cursor: pointer;
+}
