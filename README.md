@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 It uses: 
 - Node 12.18.1
 - Nebular 4 for the UX elements
-- Bootstrap 4.5 for reponsive grid layout.
+- Bootstrap 4.5 for responsive grid layout.
 
 ## Initial setup
 
